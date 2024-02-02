@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="background" stylesheets="@../style/quiz.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.QuizResultController">
+   <children>
+      <ImageView fitHeight="215.0" fitWidth="254.0" layoutX="89.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/media/normal/like.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="226.0" layoutY="36.0" prefHeight="64.0" prefWidth="391.0" style="-fx-background-color: yellow;" text="RESULT">
+         <font>
+            <Font name="Chalkboard SE Light" size="35.0" />
+         </font></Label>
+      <Label fx:id="mark" alignment="CENTER" layoutX="343.0" layoutY="234.0" prefHeight="121.0" prefWidth="257.0" style="-fx-background-color: pink; -fx-background-radius: 32px;" text="Label">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="marksText" alignment="CENTER" layoutX="327.0" layoutY="160.0" prefHeight="70.0" prefWidth="396.0" text="Label">
+         <font>
+            <Font name="Avenir Black Oblique" size="23.0" />
+         </font></Label>
+      <Button fx:id="YesButton" layoutX="222.0" layoutY="489.0" mnemonicParsing="false" onAction="#yesButton" prefHeight="66.0" prefWidth="85.0" text="Yes">
+         <font>
+            <Font size="27.0" />
+         </font></Button>
+      <Button fx:id="NoButton" layoutX="487.0" layoutY="490.0" mnemonicParsing="false" onAction="#noButton" prefHeight="66.0" prefWidth="85.0" text="No">
+         <font>
+            <Font size="31.0" />
+         </font></Button>
+      <Label fx:id="marksText1" alignment="CENTER" layoutX="230.0" layoutY="387.0" prefHeight="46.0" prefWidth="382.0" style="-fx-background-color: #f8da5b;" text="Do you want to replay ?">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

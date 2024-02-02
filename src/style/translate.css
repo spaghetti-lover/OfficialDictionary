@@ -1,0 +1,90 @@
+.root {
+    -button-color: #747f8d;
+    -hover-button-color: #2e3338; 
+
+    -purple-color: #5865F2;
+    -hover-purple-color: #4752C4;
+
+    -text-color: #555c5d;
+    -hover-text-color: #2e3338;  
+
+    -gray-color: #e6e6e6;
+    -title-color: #060607;
+    -hover-background-color: #D4D7DC;
+}
+ 
+/* ========================= Button ========================= */
+
+.button-lang {
+    -fx-background-color: -gray-color;
+    -fx-min-width: 90;
+    -fx-padding: 5;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+}
+
+.button-lang.active {
+    -fx-background-color: white;
+    -fx-text-fill: -hover-text-color;
+}
+
+.button-speak {
+    -fx-background-image: url('../resource/media/normal/speak.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 40;
+}
+
+.button-speak:hover {
+    -fx-background-image: url('../resource/media/hover/speak.png');
+    -fx-background-size: 40;
+}
+
+.button-double-arrow {
+    -fx-background-image: url('../resource/media/normal/double-arrow.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 40;
+}
+
+.button-double-arrow:hover {
+    -fx-background-color: none;
+    -fx-cursor: default;
+}
+
+.button-translate-submit {
+    -fx-graphic: url('../resource/media/normal/translate-submit.png');
+    -fx-border-radius: 3;
+    -fx-padding: 5;
+    -fx-pref-width: 120;
+    -fx-pref-height: 30;
+}
+
+.button-translate-submit:hover {
+    -fx-text-fill: white;
+    -fx-background-color: -hover-green-color;
+}
+
+/* ========================= TextField ========================= */
+
+.text-field {
+    -fx-background-color: white;
+    -fx-font-size: 15;
+}
+
+/* ========================= TextArea ========================= */
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-color: white;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+    -fx-font-size: 15;
+}
+
+.text-area:focused {
+    -fx-background-color:white;
+    -fx-font-size: 15;
+}

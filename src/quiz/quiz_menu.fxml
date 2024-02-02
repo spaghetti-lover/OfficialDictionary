@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="800.0" styleClass="background" stylesheets="@../style/quiz.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quiz.QuizMenuController">
+   <children>
+      <Button fx:id="playButtonQuiz" layoutX="249.0" layoutY="193.0" mnemonicParsing="false" onAction="#Initialize" prefHeight="110.0" prefWidth="328.0" style="-fx-background-radius: 32; -fx-background-color: #F2BE22;" text="Press to start" textFill="#655d5d">
+         <font>
+            <Font name="STIXGeneral-Regular" size="48.0" />
+         </font></Button>
+      <Button fx:id="exitButtonQuiz" layoutX="275.0" layoutY="439.0" mnemonicParsing="false" onAction="#Initialize" prefHeight="90.0" prefWidth="291.0" style="-fx-background-radius: 32; -fx-background-color: #F24C3D;" text="EXIT">
+         <font>
+            <Font name="Avenir Next Medium" size="42.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#e8b9b9" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Button>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="166.0" layoutY="39.0" prefHeight="126.0" prefWidth="521.0" text="Fun Quiz" textAlignment="CENTER" textFill="#f8eeee">
+         <font>
+            <Font name="Chalkboard SE Bold" size="93.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="143.0" fitWidth="149.0" layoutX="40.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" styleClass="image">
+         <image>
+            <Image url="@../resource/media/normal/idea.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="addButtonQuiz" layoutX="271.0" layoutY="329.0" mnemonicParsing="false" onAction="#Initialize" prefHeight="85.0" prefWidth="296.0" style="-fx-background-radius: 32; -fx-background-color: #F2BE22;" text="Add new question" textFill="#655d5d">
+         <font>
+            <Font name="STIXGeneral-Regular" size="33.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

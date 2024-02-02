@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flashcard.PlayerController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="46.0" layoutY="124.0" prefHeight="597.0" prefWidth="923.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="349.0" prefWidth="179.0">
+               <children>
+                  <ListView fx:id="cardList" layoutY="4.0" prefHeight="608.0" prefWidth="280.0" styleClass="card-list">
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding></ListView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="349.0" prefWidth="926.0">
+               <children>
+                  <SplitPane layoutX="26.0" layoutY="20.0" orientation="VERTICAL" prefHeight="516.0" prefWidth="595.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label fx:id="questionLabel" contentDisplay="CENTER" layoutX="34.0" layoutY="37.0" lineSpacing="10.0" prefHeight="420.0" prefWidth="528.0" styleClass="card-label" text="No card selected" textAlignment="CENTER" wrapText="true">
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+                  <ButtonBar layoutX="224.0" layoutY="525.0" prefHeight="64.0" prefWidth="400.0">
+                     <buttons>
+                        <Button fx:id="toggleAnswerBtn" mnemonicParsing="false" onAction="#toggleAnswer" prefHeight="42.0" prefWidth="148.0" stylesheets="@css/player.css" text="Show ans" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Button>
+                        <Button fx:id="StudySession" mnemonicParsing="false" onAction="#toggleStudySession" prefHeight="39.0" prefWidth="148.0" stylesheets="@css/player.css" text="Next (WIP)" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font></Button>
+                     </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <ButtonBar layoutX="52.0" layoutY="53.0" prefHeight="64.0" prefWidth="640.0" stylesheets="@css/player.css" AnchorPane.rightAnchor="308.0">
+         <buttons>
+            <Button fx:id="backToMain" mnemonicParsing="false" onAction="#switchToMain" prefHeight="36.0" prefWidth="148.0" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#onDeleteCard" prefHeight="36.0" prefWidth="148.0" text="Delete" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="editCard" mnemonicParsing="false" onAction="#switchToEditor" prefHeight="36.0" prefWidth="148.0" text="Edit" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="addCard" mnemonicParsing="false" onAction="#addCardToDeck" prefHeight="36.0" prefWidth="148.0" text="Add Card" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+         </buttons>
+      </ButtonBar>
+      <Label id="deck_title" fx:id="playerTitle" layoutX="69.0" layoutY="12.0" prefHeight="47.0" prefWidth="329.0" styleClass="deck_title" stylesheets="@css/player.css" text="Deck Title here" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

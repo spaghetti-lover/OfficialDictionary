@@ -1,0 +1,77 @@
+.root{
+    -fx-font-family: "serif";
+    -fx-font-style: normal;
+    -fx-font-weight: bolder;
+    -fx-background-color: #1f1137;
+    -fx-font-size: 20px;
+    -fx-font-color:#000000;
+}
+
+.button{
+    -fx-background-color: #353A56;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #353A56;
+}
+
+.button:hover {
+    -fx-background-color: black;
+    -fx-border-color: black;
+}
+
+.deck_title {
+    -fx-background-color: #1f1137;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #1f1137
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #D3D3D3;
+    -fx-text-fill: white;
+}
+
+.card-label {
+    -fx-background-color: #353A56;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #353A56;
+}
+
+.done-bar {
+    -fx-background-color: #18D794;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #18D794;
+}
+
+.unfinished-bar {
+    -fx-background-color: #D057004D;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #D057004D;
+}
+
+.need-to-finish-bar {
+    -fx-background-color: #2E3856;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #2E3856;
+}

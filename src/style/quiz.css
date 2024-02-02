@@ -1,0 +1,23 @@
+.background {
+    -fx-background-color: #22A699;
+    -fx-background-blend-mode: overlay;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 15, 0, 0, 4);
+    -fx-cursor: hand;
+}
+
+.image-view-1 {
+    -fx-image: url('../resource/media/normal/loser.png');
+}
+
+.image-view-2 {
+    -fx-image: url('../resource/media/normal/like.png');
+}
+
+.image-view-3 {
+    -fx-image: url('../resource/media/normal/excellence.png');
+}
+
+
